@@ -17,6 +17,6 @@ AddEventHandler('onResourceStart', function()
 end)
 
 function discordlog(nazwaserweras)
-    local webhook = 'https://discordapp.com/api/webhooks/863190068261027840/iWjEN3IbI1MBzHOxEP7f8flbbrw2UgHdMJaTad4uJh1xWPq8oxgrUlSSoUhun4P56pn7'
+    local webhook = 'WEBHUG'
 	PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({username = OficjalnaNazwaSkryptu, embeds = {{["color"] = 1,["title"] = "Zmieniono nazwę skryptu!",["description"] = "Nazwa skryptu z **".. OficjalnaNazwaSkryptu .."** na **"..GetCurrentResourceName().."**",["footer"] = {["text"] = nazwaserweras},}},}), { ['Content-Type'] = 'application/json' })
 end
