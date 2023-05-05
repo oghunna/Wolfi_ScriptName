@@ -1,7 +1,7 @@
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-local OficjalnaNazwaSkryptu = 'Wolfi_ScriptName'
+local OficjalnaNazwaSkryptu = 'hubercik_scriptname'
 
 AddEventHandler('onResourceStart', function()
 	if GetCurrentResourceName() ~= OficjalnaNazwaSkryptu then
